@@ -1,0 +1,65 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-dark);
+  color: var(--color-text-inverse);
+  gap: 1rem;
+  box-shadow: var(--shadow-sm);
+
+  @media (max-width: 900px) {
+    padding: var(--space-md) var(--space-md);
+  }
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+    align-items: stretch;
+
+    .nav-links {
+      width: 100%;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .cart-pill {
+      justify-content: center;
+    }
+  }
+}
+
+.brand {
+  color: var(--color-text-inverse);
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  padding: 0.45rem 0.7rem;
+  border-radius: var(--radius-pill);
+
+  &--active {
+    background: var(--color-primary);
+    color: var(--color-text-inverse);
+  }
+}
+
+.cart-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--color-text-inverse);
+  text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-dark-2);
+}

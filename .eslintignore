@@ -1,0 +1,8 @@
+node_modules/
+build/
+dist/
+public/
+.cache/
+
+# Ignore generated files
+*.d.ts
